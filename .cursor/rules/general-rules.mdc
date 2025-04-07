@@ -1,0 +1,10 @@
+# General Rules for the Email Management Agent
+Applies to: **/*.py
+
+- Use Python 3.11+ syntax and features.
+- Follow PEP 8 style guidelines (e.g., 4-space indentation, snake_case for variables).
+- Include type hints for all function parameters and return types.
+- Write concise docstrings for every function and class in Google style format.
+- Handle exceptions explicitly with try-except blocks and log errors using the `logging` module.
+- Prefer modular code: break functionality into small, reusable functions or classes.
+- Use environment variables (via `python-dotenv`) for sensitive data like API keys or credentials.

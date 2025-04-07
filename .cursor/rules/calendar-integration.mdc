@@ -1,0 +1,7 @@
+# Calendar Integration Rules
+Applies to: **/calendar_*.py
+
+- Use Google Calendar API for Gmail accounts and CalDAV or a similar protocol for Proton.me calendars.
+- Fetch events daily and set reminders for upcoming events (e.g., 15 minutes before).
+- Send reminders via the same notification system as email alerts.
+- Store calendar event IDs in the database to track processed reminders.

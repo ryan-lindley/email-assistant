@@ -1,0 +1,7 @@
+# Notification System Rules
+Applies to: **/notify_*.py
+
+- Implement notifications via desktop alerts (e.g., `plyer`) and optionally SMS/email (e.g., Twilio or SMTP).
+- Format notifications as: "From: [sender] | Subject: [subject] | Summary: [summary]".
+- Limit notifications to important emails only, as determined by NLP or sender rules.
+- Include a cooldown period (e.g., 5 minutes) to avoid spamming the user with rapid-fire alerts.

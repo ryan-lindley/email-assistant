@@ -1,0 +1,10 @@
+# Email Handling Rules
+Applies to: **/email_*.py, **/imap_*.py, **/api_*.py
+
+- Use the Gmail API (`google-auth`, `google-api-python-client`) for Google accounts and ProtonMail Bridge or API for Proton.me accounts.
+- Implement OAuth2 authentication for Gmail and secure credential storage for ProtonMail.
+- Fetch emails in batches (e.g., 50 at a time) to optimize performance.
+- Include a function to classify emails as "human-generated" or "bot-generated" using headers (e.g., "Precedence: bulk") and content analysis.
+- Flag important emails by checking sender whitelists, keywords (e.g., "urgent", "meeting"), or reply chains.
+- For spam or bot emails (e.g., containing "loan", "mortgage", "credit"), attempt to unsubscribe using "List-Unsubscribe" headers or links, then delete them.
+- Store processed email metadata (e.g., message ID, action taken) in a SQLite database to avoid reprocessing.

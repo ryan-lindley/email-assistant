@@ -1,0 +1,8 @@
+# NLP Analysis Rules
+Applies to: **/nlp_*.py, **/analysis_*.py
+
+- Use `spacy` or `transformers` (e.g., a lightweight BERT model) for natural language processing to detect email importance.
+- Train or fine-tune a model to classify emails as "important" based on user-provided examples (e.g., "meeting with boss" vs. "newsletter").
+- Extract a brief summary (1-2 sentences) of important emails using text summarization techniques.
+- Avoid heavy NLP models unless explicitly requested; prioritize speed for real-time processing.
+- Cache NLP results in the database to reduce redundant processing.

@@ -1,0 +1,7 @@
+# Database Rules
+Applies to: **/db_*.py, **/storage_*.py
+
+- Use SQLite as the lightweight database for storing email metadata, preferences, and calendar events.
+- Create tables with clear schemas (e.g., `emails: id, message_id, sender, action, timestamp`).
+- Use SQLAlchemy or `sqlite3` with parameterized queries to prevent SQL injection.
+- Include a cleanup routine to remove records older than 30 days.
