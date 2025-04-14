@@ -40,6 +40,12 @@ protonmail_credentials.json
 account_config.json
 token.json
 token.pickle
+*.pem
+.encryption_key
+.encryption_salt
+privatekey.*.asc
+*_credentials.json
+bot_weights.json
 
 # Logs
 *.log
@@ -158,4 +164,10 @@ cython_debug/
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
-!.vscode/extensions.json 
+!.vscode/extensions.json
+
+# Test files
+test_*.ps1
+*_test.ps1
+simple_*.ps1
+local_test.* 
