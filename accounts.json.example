@@ -1,0 +1,45 @@
+{
+  "_comment": "Email Assistant - Multi-Account Configuration",
+  "_instructions": "Add your Gmail accounts here. Each needs its own credentials.json file.",
+  "accounts": [
+    {
+      "name": "Personal",
+      "email": "your.personal@gmail.com",
+      "credentials_path": "credentials_personal.json",
+      "enabled": true,
+      "priority": "normal",
+      "notes": "Personal email account"
+    },
+    {
+      "name": "Work Primary",
+      "email": "your.work@company.com",
+      "credentials_path": "credentials_work1.json",
+      "enabled": true,
+      "priority": "high",
+      "notes": "Main work email"
+    },
+    {
+      "name": "Work Secondary",
+      "email": "team@company.com",
+      "credentials_path": "credentials_work2.json",
+      "enabled": true,
+      "priority": "normal",
+      "notes": "Team shared inbox"
+    },
+    {
+      "name": "Side Project",
+      "email": "project@gmail.com",
+      "credentials_path": "credentials_side.json",
+      "enabled": true,
+      "priority": "low",
+      "notes": "Side project emails"
+    }
+  ],
+  "settings": {
+    "parallel_fetch": true,
+    "max_emails_per_account": 1000,
+    "unified_model": true,
+    "cross_account_deduplication": true,
+    "sync_interval_minutes": 15
+  }
+}
